@@ -2,3 +2,15 @@
   <h1 style="font-weight: 200">POSTS#INDEX</h1>  
   <a href="/">BACK</a>
 </div>
+<div class="row">
+  {{ range . }}
+    <div class="col-md-3">
+      <div class="thumbnail" style="height: 250px">
+        <div class="caption">
+          <h2 style="font-weight: 100">{{ .Title }}</h2>
+          <p class="text-muted" style="font-weight: 200">{{ .Description }}</p>
+        </div>
+      </div>
+    </div>
+  {{ end }}
+</div>
